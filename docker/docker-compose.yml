@@ -1,0 +1,16 @@
+services:
+  acg-faka:
+    container_name: acg-faka
+    image: yqchilde/acg-faka:v3.0.9
+    ports:
+      - "5188:80"
+    restart: always
+    environment:
+      - DB_DRIVER=mysql
+      - DB_HOST=127.0.0.1
+      - DB_DATABASE=demo
+      - DB_USERNAME=demo
+      - DB_PASSWORD=TbfXmL2JTcXYYrWZ
+      - DB_CHARSET=utf8mb4
+      - DB_COLLATION=utf8mb4_unicode_ci
+      - DB_PREFIX=acg_
